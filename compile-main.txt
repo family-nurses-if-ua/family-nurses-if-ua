@@ -1,0 +1,33 @@
+//compile file for family-nurses-ua
+//Here goes.
+
+//First file mentioned is actually the output file:
+#output about.html
+
+\raw\header.html
+\raw\about-content.html
+\raw\footer.html
+
+#writeandflush
+
+#output news.html
+
+\raw\header.html
+\raw\news-content.html
+\raw\footer.html
+
+#writeandflush
+
+#output achievements.html
+
+\raw\header.html
+\raw\achievements-content.html
+\raw\footer.html
+
+#writeandflush
+
+#output contacts.html
+
+\raw\header.html
+\raw\contacts-content.html
+\raw\footer.html

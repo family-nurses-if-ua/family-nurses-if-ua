@@ -1,0 +1,105 @@
+body {
+    margin: 0px;
+}
+
+.bkg-page{
+    background-color: rgba(245,245,245,1);
+}
+
+.bkg-main-color{
+    background-color: rgb(200, 0, 0);
+}
+
+.bkg-logo{
+    background-color: white;
+}
+
+#header-top{
+    height: 300px;
+    position: relative;
+}
+
+#header-topnav-flex{
+    position: absolute;
+    top: 70%;
+    bottom: 0;
+    left: 300px;
+    right: 0;
+}
+
+#header-topnav{
+    height: 100%;
+    width: 100%;
+    display:flex; 
+    /*flex-wrap: nowrap;*/
+    position: absolute;
+    bottom: 0;
+}
+
+.topnav-item {
+    flex: 1 1;
+    /*text-align: center;*/
+    vertical-align: middle;
+    position: relative;
+    height: 100%;
+}
+
+.topnav-item-bkg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    text-align: center;
+    background-size: cover;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.topnav-item > a {
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1.5);
+    margin: auto auto;
+    /*top: 50%;*/
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    
+}
+
+.topnav-item > a:hover {
+    color: black;
+    
+}
+
+.topnav-item:hover > .topnav-item-bkg {
+    opacity: 0.5;
+}
+
+.topnav-item:hover > a{
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%) scale(2);
+}
+
+/*.topnav-item > .topnav-item-bkg {
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: opacity 0s ease-in-out;
+    z-index: -1;
+}
+
+.topnav-item:hover > .topnav-item-bkg {
+    opacity: 1;    
+}*/
+
+h1 {
+    border-left: solid 2px;
+    padding-left: 10px;
+    background-color: rgba(0, 0, 0, 0.05)
+}
